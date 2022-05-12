@@ -24,6 +24,13 @@ pipeline
              echo "Deploying the Project........."
                   }
                 }
-        }
+        
+            stage('Verify')
+               {
+               steps {
+               echo "Testing the Project.........."
+                  }
+                }
+	}
     }
 
